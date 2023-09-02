@@ -2,7 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
     font-family: 'Lato', sans-serif;
 }
@@ -15,36 +16,62 @@
     margin: auto;
 }
 .pricicng-table-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
 }
 .pricicng-table{
     max-width: 400px;
     width: 100%;
     border: 1px solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
     transition: 0.4s ease;
     overflow: hidden;
 }
 .pricicng-table:hover{
     border-style: solid;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
 }
 .pricing-table-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 100%;
 }
 .pricicng-table-header {
     background-color: #003152;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 90px;
-    box-shadow: 0px 0px 0px 1px #003152;
+    -webkit-box-shadow: 0px 0px 0px 1px #003152;
+            box-shadow: 0px 0px 0px 1px #003152;
     position: relative;
 }
 .pricicng-table-header h1{
@@ -69,7 +96,7 @@
     /* text-decoration: line-through */
 }
 .pricicng-table-offer h2{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Lato';
     color: #ff0000;
     margin-bottom: 20px;
@@ -104,6 +131,8 @@
     border-radius: 4px;
     text-decoration: none; 
     display: inline-block;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .pricicng-table-footer .button:hover{
@@ -133,16 +162,23 @@
     background-color: #F45B20;
     width: 200px;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 10px 0;
-    justify-content: center;
-    box-shadow: 0px 0px 7px #3d3636;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0px 0px 7px #3d3636;
+            box-shadow: 0px 0px 7px #3d3636;
 }
 .ribbon{
     position: absolute;
     right: -67px;
     top: 24px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .ribbon-inner span{
     font-size: 14px;
@@ -159,7 +195,10 @@
 
 @media (max-width:768px) {
     .pricicng-table-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .pricicng-table {
         max-width: unset;
