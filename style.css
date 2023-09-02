@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', sans-serif;
+}
+.price-list-section{
+    padding: 70px 0;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+.pricicng-table-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.pricicng-table{
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+.pricicng-table:hover{
+    border-style: solid;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.pricing-table-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.pricicng-table-header {
+    background-color: #003152;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+    box-shadow: 0px 0px 0px 1px #003152;
+    position: relative;
+}
+.pricicng-table-header h1{
+    font-size: 24px;
+    font-family: 'Lato';
+    color: #fff;
+}
+.pricicng-table-offer{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.pricicng-table-offer h1{
+    font-size: 58px;
+    font-family: 'Lato';
+    color: #555;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.pricicng-table-offer h1 span{
+    font-size: 16px;
+    font-family: 'Lato';
+    /* text-decoration: line-through */
+}
+.pricicng-table-offer h2{
+    font-size: 20px;
+    font-family: 'Lato';
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+.pricicng-table-content{
+    padding: 20px 20px 0px;
+    text-align: center;
+    color: #3a3a3a;
+}
+.pricicng-table-content h2{
+    font-size: 20px;
+}
+.pricicng-table-content h5{
+    font-size: 14px;
+}
+.pricicng-table-content span{
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-top: 25px;
+    display: block;
+}
+.pricicng-table-content span h4{
+    font-size: 17px;
+    color: #3a3a3a;
+}
+.pricicng-table-footer .button{
+    background-color: #F45B20;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none; 
+    display: inline-block;
+    transition: 0.4s all;
+}
+.pricicng-table-footer .button:hover{
+    background-color: #003152;
+}
+.pricicng-table-footer{
+    padding: 30px 0;
+    text-align: center;
+}
+.heding_1{
+    color: #003152;
+    font-family: "Lato", Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.heding_5{
+    color: #003152;
+    font-family: "Lato", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.ribbon-inner{
+    background-color: #F45B20;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    box-shadow: 0px 0px 7px #3d3636;
+}
+.ribbon{
+    position: absolute;
+    right: -67px;
+    top: 24px;
+    transform: rotate(45deg);
+}
+.ribbon-inner span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 7px;
+    color: #fff;
+}
+@media (max-width:1200px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width:768px) {
+    .pricicng-table-wrapper{
+        flex-direction: column;
+    }
+    .pricicng-table {
+        max-width: unset;
+        margin: auto;
+    }
+}
